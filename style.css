@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Operator Mono";
+  src: url("OperatorMono-Book_Web.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Dank";
+  src: url("Dank\ Mono\ Italic\ [TheFontsMaster.com].otf") format("opentype");
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Operator Mono";
+}
+
+body {
+  border: solid 0.6em black;
+}
+::selection {
+  background: #ffc600;
+}
+
+header h1::after {
+  content: "";
+  height: 40px;
+  width: 40px;
+  background: #ffc600;
+  position: absolute;
+  margin-top: -2px;
+  margin-left: -210px;
+  z-index: -1;
+}
+
+.highlight {
+  background: url("blackgrit-6a2d636a530802d3ce97afb7af53a84b.png");
+  background-position: 55% 55%;
+}
+
+.highlight:hover {
+  background-position: 50% 50%;
+}
+
+.highlight:hover::after {
+  position: absolute;
+  content: "";
+  width: 0.4em;
+  height: 0.4em;
+  background: #ffc600;
+  z-index: -1;
+}
+.icon {
+  font-size: 20px;
+  position: absolute;
+  color: #ffc600;
+}
+
+a {
+  font-family: "Dank";
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffc600;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 580px) {
+  body {
+    border: none;
+  }
+}
