@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 @font-face {
   font-family: "Operator Mono";
   src: url("OperatorMono-Book_Web.woff2") format("woff2");
@@ -59,6 +61,7 @@ header h1::after {
 a {
   font-family: "Dank";
   font-family: 'Inconsolata', monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 ::-webkit-scrollbar {
