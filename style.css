@@ -11,6 +11,10 @@
   font-family: "Dank";
   src: url("Dank\ Mono\ Italic\ [TheFontsMaster.com].otf") format("opentype");
 }
+:root {
+  --primary-color: #000;
+  --secondary-color: #ffc600;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -19,17 +23,17 @@ html {
 }
 
 body {
-  border: solid 0.6em black;
+  border: solid 0.6em var(--primary-color);
 }
 ::selection {
-  background: #ffc600;
+  background: var(--secondary-color);
 }
 
 header h1::after {
   content: "";
   height: 40px;
   width: 40px;
-  background: #ffc600;
+  background: var(--secondary-color);
   position: absolute;
   margin-top: -2px;
   margin-left: -210px;
@@ -50,13 +54,13 @@ header h1::after {
   content: "";
   width: 0.4em;
   height: 0.4em;
-  background: #ffc600;
+  background: var(--secondary-color);
   z-index: -1;
 }
 .icon {
   font-size: 20px;
   position: absolute;
-  color: #ffc600;
+  color: var(--secondary-color);
 }
 
 a {
@@ -68,11 +72,11 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #000;
+  background: var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffc600;
+  background: var(--secondary-color);
   border-radius: 5px;
 }
 
