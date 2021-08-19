@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Operator Mono";
-  src: url("OperatorMono-Book_Web.woff2") format("woff2");
+  src: url("Fonts/OperatorMono-Book_Web.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Dank";
-  src: url("Dank\ Mono\ Italic\ [TheFontsMaster.com].otf") format("opentype");
+  src: url("Fonts/Dank\ Mono\ Italic\ [TheFontsMaster.com].otf") format("opentype");
 }
 :root {
   --primary-color: #000;
